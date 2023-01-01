@@ -99,7 +99,7 @@ h2,
 h3,
 h4,
 h5 {
-	font-family: 'Playfair Display', sans-serif;
+	font-family: 'Merriweather', sans-serif;
 	color: #292f33;
 }
 
@@ -296,7 +296,7 @@ big,
 blockquote {
 	padding: 1em 0;
 	margin-bottom: 0.666667em;
-	font-family: 'Playfair Display', sans-serif;
+	font-family: 'Merriweather', sans-serif;
 	font-style: italic;
 	font-size: 2.25em;
 	line-height: 1.3333325em;
@@ -1237,7 +1237,7 @@ img.round {
 .thumb.featured .info .big-title {
 	display: block;
 	max-width: 80%;
-	font-family: 'Playfair Display', sans-serif;
+	font-family: 'Merriweather', sans-serif;
 	font-size: 2em;
 	font-weight: 400;
 	line-height: 1em;
@@ -1287,7 +1287,7 @@ img.round {
 	position: absolute;
 	left: 20px;
 	bottom: 20px;
-	font-family: 'Playfair Display', sans-serif;
+	font-family: 'Merriweather', sans-serif;
 	font-size: 1.5em;
 	line-height: 1.25em;
 	color: #000;
