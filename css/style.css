@@ -103,7 +103,8 @@ h5 {
 	color: #292f33;
 }
 
-h6 {
+h6,
+h7 {
 	font-family: 'Roboto', sans-serif;
 	color: #292f33;
 }
@@ -118,6 +119,10 @@ h5 {
 h2,
 h6 {
 	font-weight: 700;
+}
+
+h6 {
+	font-weight: 400;
 }
 
 h1 a,
@@ -171,6 +176,14 @@ h5 {
 }
 
 h6 {
+	margin-bottom: 1.5em;
+	font-size: 1em;
+	letter-spacing: 4px;
+	line-height: 1.5em;
+	text-transform: uppercase;
+}
+
+h7 {
 	margin-bottom: 1.5em;
 	font-size: 1em;
 	letter-spacing: 4px;
