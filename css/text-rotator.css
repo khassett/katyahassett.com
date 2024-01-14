@@ -8,20 +8,8 @@
 }
 
 .rotatingText-adjective {
-    /*font-family: 'Open Sans', sans-serif;*/
-    /*font-size: 50px;*/
-    /*font-style: normal;*/
-    /*font-weight: 700;*/
-    /*left: 0;*/
-    /*display: inline-block;*/
-    /*margin-bottom: 0;*/
-    /*margin-top: 50px;*/
     position: absolute;
     opacity: 0;
-    /*right: 0;*/
-    /*text-align: center;*/
-    /*text-transform: uppercase;*/
-    /*top: 0;*/
 }
 
 @keyframes rotate {
