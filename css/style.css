@@ -216,7 +216,7 @@ h6.heading:after {
 	width: 100%;
 	height: 1px;
 	margin-top: -1px;
-	background-color: #ccd6dd\9\0;
+	background-color: #ccd6dd;
 	background-image: -webkit-linear-gradient(left, #ccd6dd, rgba(245, 248, 250, 0));
 	background-image: linear-gradient(to right, #ccd6dd, rgba(245, 248, 250, 0));
 }
@@ -1905,7 +1905,7 @@ img.round {
 
 #top.open-mobile-menu .site-menu-toggle em.middle { 
 	background-color: transparent;
-	background-color: #292f33\9\0;
+	background-color: #292f33;
 	-o-transition: background 0.1s ease-in-out;
 	-webkit-transition: background 0.1s ease-in-out;
 	transition: background 0.1s ease-in-out;
