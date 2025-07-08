@@ -2950,7 +2950,7 @@ img.round {
 
 	#site-menu ul {
 		margin-top: 0;
-		text-align: right;
+		text-align: left;
 	}
 
 	#site-menu li {
@@ -3763,4 +3763,38 @@ img.round {
 /* Ensure the logo has consistent sizing */
 .site-title h1 a img {
 	display: block;
+}
+
+/* Ensure header and content containers have consistent alignment */
+#top.navbar {
+	width: 100%;
+}
+
+#top.navbar .container {
+	max-width: none;
+	width: 100%;
+}
+
+/* Force all content containers to have the same max-width for consistent alignment */
+.container,
+.container-boxes,
+.container-masonry {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+/* Override navigation alignment to be left-aligned */
+@media (min-width: 768px) {
+	#top .inner #site-menu {
+		text-align: left;
+	}
+	
+	#site-menu ul {
+		text-align: left !important;
+	}
+	
+	/* Ensure menu items are left-aligned */
+	#site-menu li {
+		text-align: left;
+	}
 }
