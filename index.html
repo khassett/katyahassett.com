@@ -18,6 +18,7 @@
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/site.js"></script>
+    <script type="text/javascript" src="js/shared-nav.js"></script>
 </head>
 <body>
 
@@ -31,20 +32,14 @@
                     <em class="first"></em><em class="middle"></em><em class="last"></em>
                 </a>
             </div>
-
-            <div id="site-menu">
-                <nav>
-                    <ul>
-                        <li class="current-menu-item"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="work-categories.html">Work</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <!-- Navigation will be injected here -->
         </div>
     </div>
 </header>
+
+<script>
+    injectNavigation('home');
+</script>
 
 <main id="content" role="main">
 
