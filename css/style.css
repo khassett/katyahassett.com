@@ -3798,3 +3798,28 @@ img.round {
 		text-align: left;
 	}
 }
+
+/* Reduce navigation flicker during injection */
+.site-title + #site-menu {
+    opacity: 1;
+    visibility: visible;
+    transition: none;
+}
+
+/* Pre-allocate space for navigation to prevent layout shift */
+@media (min-width: 768px) {
+    .inner {
+        min-height: 52px; /* Approximate height needed for logo + nav */
+    }
+    
+    .site-title {
+        min-height: 52px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+/* Ensure smooth appearance of navigation */
+#site-menu {
+    transition: opacity 0.1s ease-in;
+}
