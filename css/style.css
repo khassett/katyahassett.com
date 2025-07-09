@@ -23,14 +23,33 @@ Table of contents:
 16. Sidebar widgets
 17. Footer section
 18. Media queries
-19. Webkit scrollbar query
-20. Large mobile query (480px)
-21. Small tablet query (768px)
-22. Large tablet query (992px)
-23. Desktop query (1200px)
-24. Print query
+19. Large mobile query (480px)
+20. Small tablet query (768px)
+21. Large tablet query (992px)
+22. Desktop query (1200px)
+
+OPTIMIZED: Removed print styles, webkit scrollbar, and legacy properties
 
 */
+
+/* Custom Font - Scratch Storm */
+@font-face {
+    font-family: 'Scratch Storm';
+    src: url('../fonts/ScratchStorm.woff') format('woff'),
+         url('../fonts/ScratchStorm.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Scratch Storm';
+    src: url('../fonts/ScratchStorm-Bold.woff') format('woff'),
+         url('../fonts/ScratchStorm-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* 1. Reset */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
@@ -70,7 +89,7 @@ body {
 	height: 100%;
 	font-size: 87.52%;
 	line-height: 1.6875;
-	font-family: 'Droid Serif', sans-serif;
+	font-family: 'Scratch Storm', 'Droid Serif', sans-serif;
 	color: #66757f;
 	overflow-x: hidden;
 	-webkit-text-size-adjust: 100%;
@@ -99,13 +118,13 @@ h2,
 h3,
 h4,
 h5 {
-	font-family: 'Merriweather', sans-serif;
+	font-family: 'Scratch Storm', 'Merriweather', sans-serif;
 	color: #292f33;
 }
 
 h6,
 h7 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Scratch Storm', 'Roboto', sans-serif;
 	color: #292f33;
 }
 
@@ -137,7 +156,7 @@ h6 a {
 
 h1 {
 	margin-bottom: 0.5em;
-	font-size: 4.2em;
+	font-size: 5.2em;
 	letter-spacing: 4px;
 	line-height: 1em;
 }
@@ -1415,7 +1434,6 @@ img.round {
 	font-variant: normal;
 	line-height: 1;
 	text-transform: none;
-	speak: none;
 	color: #fff;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -1445,61 +1463,6 @@ img.round {
 .post-box.post-link h5,
 .post-box.post-link h5 a {
 	color: #ff2641;
-}
-
-/* 11. Tabs */
-.tab-container {
-	margin-bottom: 1.5em;
-}
-
-.tab-container .tab_content {
-	padding: 1.75em 0;
-	border-top: 1px solid #ccd6dd;
-}
-
-.tab-container .tab_content :last-child {
-	margin-bottom: 0;
-}
-
-.tab-container .tabs {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.tab-container .tabs li {
-	float: left;
-	margin: 0 2em 0 0;
-}
-
-.tab-container .tabs li.active {
-	position: relative;
-}
-
-.tab-container .tabs li.active:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	bottom: -1px;
-	width: 100%;
-	height: 1px;
-	background-color: #ff2641;
-}
-
-.tab-container .tabs li a {
-	display: block;
-	padding: 1em 0;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	letter-spacing: 4px;
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #8899a6;
-	outline: 0;
-}
-
-.tab-container .tabs li.active a {
-	color: #292f33;
 }
 
 /* 12. Owl Carousel */
@@ -1943,7 +1906,7 @@ img.round {
 	padding-left: 0;
 	margin-top: 1.5em;
 	margin-bottom: 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Scratch Storm', 'Roboto', sans-serif;
 	list-style: none;
 }
 
@@ -2012,7 +1975,6 @@ img.round {
 	font-variant: normal;
 	font-weight: 400;
 	text-transform: none;
-	speak: none;
 	-webkit-font-smoothing: antialiased;
 	background-color: transparent;
 	color: #000;
@@ -2380,127 +2342,6 @@ img.round {
 	color: #ccd6dd;
 }
 
-/* 16. Sidebar widgets */
-.widget {
-	padding: 30px;
-	margin-top: 15px;
-	margin-bottom: 45px;
-	background-color: #fff;
-	-webkit-box-shadow: 10px 10px 0 0 #f1f5f8;
-	box-shadow: 10px 10px 0 0 #f1f5f8;
-}
-
-.widget.widget_search,
-.widget.widget_calendar {
-	padding: 0;
-	background-color: transparent;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
-
-.widget ul {
-	padding-left: 0;
-	margin-bottom: 0;
-	list-style: none;
-}
-
-.widget ul.fa-ul {
-	padding-left: 1.2em;
-}
-
-.widget ul ul {
-	padding-left: 1em;
-}
-
-.widget li {
-	margin-left: 0;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-	list-style: none;
-}
-
-.widget li a {
-	color: #66757f;
-}
-
-.widget li a:hover,
-.widget li a:hover,
-.widget li.current-cat > a {
-	color: #ff2641;
-}
-
-.widget-thumbs .thumbs {
-	margin: 0 -5px;
-}
-
-.widget-thumbs a {
-	float: left;
-	width: 50%;
-	padding: 5px;
-}
-
-.widget-thumbs a img {
-	width: 100%;
-}
-
-.widget.widget_search form,
-.widget.widget_search form input {
-	margin-bottom: 0;
-}
-
-#content .searchform {
-	position: relative;
-}
-
-#content .searchform input[type="submit"] {
-	position: absolute;
-	top: 1px;
-	right: 1px;
-	width: 2.4em;
-	height: 2.55em;
-	padding: 0;
-	border: 0;
-	margin: 0;
-	text-align: center;
-	font-family: 'FontAwesome';
-	font-size: 16px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	text-transform: none;
-	speak: none;
-	-webkit-font-smoothing: antialiased;
-	background-color: transparent;
-	color: #ccd6dd;
-	-webkit-transition: none;
-	transition: none;
-}
-
-#content .searchform input[type="text"]:focus + input[type="submit"],
-#content .searchform input[type="submit"]:hover,
-#content .searchform input[type="submit"]:focus {
-	color: #292f33;
-}
-
-.widget table {
-	margin-bottom: 0;
-}
-
-.widget table tbody th,
-.widget table tbody td {
-	padding: 0.2em;
-	text-align: center;
-}
-
-.widget table th {
-	border-top-color: #ccd6dd;
-	border-bottom-color: #ccd6dd;
-	font-weight: 700;
-	text-align: center;
-}
-
-.widget table tfoot td {
-	border-top-color: #ccd6dd;
 }
 
 /* 17. Footer section */
@@ -2552,23 +2393,6 @@ img.round {
 
 @viewport {
 	width: device-width;
-}
-
-/* 19. Webkit scrollbar query */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-	::-webkit-scrollbar {
-		width: 0.75em;
-		height: 0.75em;
-	}
-
-	::-webkit-scrollbar-track {
-		background-color: #f9f9f9;
-	}
-
-	::-webkit-scrollbar-thumb:vertical {
-		height: 5em;
-		background-color: #292f33;
-	}
 }
 
 /* 20. Mobile only query */
@@ -3655,9 +3479,6 @@ img.round {
 	}
 
 	.post-box.vertical .extra-info h5 {
-	}
-
-	.post-box.vertical .extra-info h5 {
 		height: 5.55em;
 		margin-bottom: 0.125em;
 		-webkit-line-clamp: 4;
@@ -3964,17 +3785,16 @@ img.round {
 	}
 
 	.post-box.vertical .extra-info h5 {
-	}
-
-	.post-box.vertical .extra-info h5 {
 		height: 6em;
 		margin-bottom: 0.15em;
 		-webkit-line-clamp: 4;
+		line-clamp: 4;
 	}
 
 	.post-box.vertical .extra-info h5 {
 		height: 7.5em;
 		-webkit-line-clamp: 5;
+		line-clamp: 5;
 	}
 
 	.owl-carousel .owl-prev {
@@ -3992,24 +3812,6 @@ img.round {
 	.owl-carousel.owl-round-arrows .owl-next {
 		right: -10px;
 	}
-
-}
-
-/* 24. Print query */
-@media print {
-	html, #footer, #content {
-		background: none;
-	}
-
-	#top .site-menu-toggle {
-		display: none;
-	}
-
-	h2, h3 { orphans: 3; widows: 3; page-break-after: avoid; }
-	p { orphans: 3; widows: 3; }
-	pre, blockquote { page-break-inside: avoid; }
-	abbr[title]:after { content: " (" attr(title) ")"; }
-	a, a:visited { text-decoration: underline; }
 
 }
 
