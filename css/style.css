@@ -3692,11 +3692,14 @@ img {
 }
 
 .project-row {
-    width: 100%;
-    height: 500px;
+    width: calc(100% - 1.5rem);
+    min-height: 400px;
+	background-size: cover;
     overflow: hidden;
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-row:last-child {
@@ -3706,7 +3709,7 @@ img {
 .project-link {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 400px;
     text-decoration: none;
     color: inherit;
 }
@@ -3714,7 +3717,7 @@ img {
 .project-image {
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
