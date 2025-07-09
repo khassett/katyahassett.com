@@ -118,7 +118,6 @@ OPTIMIZED: Removed print styles, webkit scrollbar, and legacy properties
 
 .h1,
 .hero-title {
-    font-family: 'Scratch Storm', 'Merriweather', sans-serif;
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -127,7 +126,6 @@ OPTIMIZED: Removed print styles, webkit scrollbar, and legacy properties
 }
 
 .hero-subtitle {
-    font-family: 'Scratch Storm', 'Merriweather', sans-serif;
     font-size: 1.5rem;
     margin-bottom: 2rem;
     opacity: 0.9;
@@ -881,6 +879,13 @@ a img {
 
 img.round {
 	border-radius: 100%;
+}
+
+/* Make images responsive by default */
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
 
 .display-inline-block {
