@@ -51,16 +51,6 @@ OPTIMIZED: Removed print styles, webkit scrollbar, and legacy properties
     font-display: swap;
 }
 
-/* Universal font rule - Apply Scratch Storm to all elements */
-* {
-    font-family: 'Scratch Storm', 'Roboto', Arial, sans-serif !important;
-}
-
-/* Preserve FontAwesome for icons */
-.fa, .fas, .far, .fal, .fab, [class^="fa-"], [class*=" fa-"] {
-    font-family: 'FontAwesome' !important;
-}
-
 /* Video Hero Section */
 .hero-video-section {
     position: relative;
@@ -3270,6 +3260,10 @@ img {
 		margin-bottom: 1.5em;
 	}
 
+	.post-box.vertical .extra-info .meta {
+		margin-top: 0.155em;
+	}
+
 	.post-box.vertical .extra-info h5 {
 		height: 5.55em;
 		margin-bottom: 0.125em;
@@ -3572,6 +3566,10 @@ img {
 		margin-bottom: 2em;
 	}
 
+	.post-box.vertical .extra-info .meta {
+		margin-top: 0.2em;
+	}
+
 	.post-box.vertical .extra-info h5 {
 		height: 6em;
 		margin-bottom: 0.15em;
@@ -3697,7 +3695,7 @@ img {
     width: calc(100% - 1.5rem);
     min-height: 400px;
 	background-size: cover;
-    overflow: visible;
+    overflow: hidden;
     position: relative;
     margin-bottom: 40px;
     margin-left: auto;
@@ -3718,30 +3716,12 @@ img {
 
 .project-image {
     width: 100%;
-    height: 400px;
+    height: 100%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     transition: transform 0.3s ease;
-    overflow: visible;
-}
-
-/* Use CSS custom properties to share image URL between background and mask */
-.project-image[style*="Nuts and Bolts.svg"] {
-    --mask-image: url('img/homepage/Nuts and Bolts.svg');
-}
-
-.project-image[style*="Magazine.svg"] {
-    --mask-image: url('img/homepage/Magazine.svg');
-}
-
-.project-image[style*="RIP.svg"] {
-    --mask-image: url('img/homepage/RIP.svg');
-}
-
-.project-image img {
-    display: none; /* Hide any img tags since we're using background images */
 }
 
 .project-overlay {
@@ -3756,15 +3736,6 @@ img {
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-    /* Mask the overlay to match the background image */
-    mask: var(--mask-image);
-    -webkit-mask: var(--mask-image);
-    mask-size: contain;
-    -webkit-mask-size: contain;
-    mask-position: center;
-    -webkit-mask-position: center;
-    mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
 }
 
 .project-info {
