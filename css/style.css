@@ -51,6 +51,16 @@ OPTIMIZED: Removed print styles, webkit scrollbar, and legacy properties
     font-display: swap;
 }
 
+/* Universal font rule - Apply Scratch Storm to all elements */
+* {
+    font-family: 'Scratch Storm', 'Roboto', Arial, sans-serif !important;
+}
+
+/* Preserve FontAwesome for icons */
+.fa, .fas, .far, .fal, .fab, [class^="fa-"], [class*=" fa-"] {
+    font-family: 'FontAwesome' !important;
+}
+
 /* Video Hero Section */
 .hero-video-section {
     position: relative;
@@ -3260,10 +3270,6 @@ img {
 		margin-bottom: 1.5em;
 	}
 
-	.post-box.vertical .extra-info .meta {
-		margin-top: 0.155em;
-	}
-
 	.post-box.vertical .extra-info h5 {
 		height: 5.55em;
 		margin-bottom: 0.125em;
@@ -3566,10 +3572,6 @@ img {
 		margin-bottom: 2em;
 	}
 
-	.post-box.vertical .extra-info .meta {
-		margin-top: 0.2em;
-	}
-
 	.post-box.vertical .extra-info h5 {
 		height: 6em;
 		margin-bottom: 0.15em;
@@ -3715,12 +3717,16 @@ img {
 }
 
 .project-image {
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
+    display: block;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
     transition: transform 0.3s ease;
 }
 
@@ -3758,7 +3764,7 @@ img {
     opacity: 0.9;
 }
 
-.project-link:hover .project-image {
+.project-link:hover .project-image img {
     transform: scale(1.05);
 }
 
