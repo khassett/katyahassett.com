@@ -51,6 +51,16 @@ OPTIMIZED: Removed print styles, webkit scrollbar, and legacy properties
     font-display: swap;
 }
 
+/* Universal font rule - Apply Scratch Storm to all elements by default */
+* {
+    font-family: 'Scratch Storm', 'Roboto', Arial, sans-serif !important;
+}
+
+/* Preserve FontAwesome for icons */
+.fa, .fas, .far, .fal, .fab, [class^="fa-"], [class*=" fa-"] {
+    font-family: 'FontAwesome' !important;
+}
+
 /* Video Hero Section */
 .hero-video-section {
     position: relative;
@@ -540,16 +550,6 @@ select {
 	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
-
-input[type=text].underline,
-input[type=password].underline,
-input[type=email].underline,
-input[type=search].underline,
-input[type=date].underline,
-input[type=number],.underline
-input[type=tel].underline,
-input[type=url].underline,
-textarea.underline,
 select.underline {
 	border-left: 0;
 	border-top: 0;
@@ -3717,7 +3717,7 @@ img {
 .project-image {
     width: 100%;
     height: 100%;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
