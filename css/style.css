@@ -3697,7 +3697,7 @@ img {
     width: calc(100% - 1.5rem);
     min-height: 400px;
 	background-size: cover;
-    overflow: hidden;
+    overflow: visible;
     position: relative;
     margin-bottom: 40px;
     margin-left: auto;
@@ -3717,17 +3717,31 @@ img {
 }
 
 .project-image {
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
-    display: block;
-    overflow: hidden;
     transition: transform 0.3s ease;
+    overflow: visible;
+}
+
+/* Use CSS custom properties to share image URL between background and mask */
+.project-image[style*="Nuts and Bolts.svg"] {
+    --mask-image: url('img/homepage/Nuts and Bolts.svg');
+}
+
+.project-image[style*="Magazine.svg"] {
+    --mask-image: url('img/homepage/Magazine.svg');
+}
+
+.project-image[style*="RIP.svg"] {
+    --mask-image: url('img/homepage/RIP.svg');
 }
 
 .project-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
+    display: none; /* Hide any img tags since we're using background images */
 }
 
 .project-overlay {
@@ -3742,6 +3756,15 @@ img {
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+    /* Mask the overlay to match the background image */
+    mask: var(--mask-image);
+    -webkit-mask: var(--mask-image);
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
 }
 
 .project-info {
@@ -3764,7 +3787,7 @@ img {
     opacity: 0.9;
 }
 
-.project-link:hover .project-image img {
+.project-link:hover .project-image {
     transform: scale(1.05);
 }
 
