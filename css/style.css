@@ -14,7 +14,6 @@ Table of contents:
  7. Mouse selected text
  8. Site elements
  9. Thumbnails with hover
-10. Masonry layout
 11. Tabs
 12. Owl Carousel
 13. Header section
@@ -1118,14 +1117,10 @@ img {
 	color: #fff;
 }
 
-/* 10. Masonry layout */
-.container-masonry,
-.container-boxes {
-	padding-top: 15px;
-}
-
-.container-masonry .box {
-	margin: 15px 0 16px;
+.thumb.dark-overlay .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .container-boxes .box {
@@ -1335,9 +1330,11 @@ img {
 }
 
 .owl-carousel .owl-item img {
-	display: block;
-	width: 100%;
-	-webkit-transform-style: preserve-3d;
+    display: block;
+    width: 100%;
+    height: 434px;  /* Add fixed height */
+    object-fit: cover;  /* Add object-fit */
+    -webkit-transform-style: preserve-3d;
 }
 
 .owl-carousel.owl-text-select-on .owl-item {
@@ -1411,10 +1408,6 @@ img {
 	opacity: 0;
 	-webkit-transition: opacity 0.3s ease;
 	transition: opacity 0.3s ease;
-}
-
-.owl-carousel .owl-item img {
-	transform-style: preserve-3d;
 }
 
 .owl-carousel .owl-video-wrapper {
@@ -3242,10 +3235,6 @@ img {
 		padding: 5em 0;
 	}
 
-	.container-masonry {
-		padding-top: 25px;
-	}
-
 	.container-boxes {
 		padding-top: 40px;
 	}
@@ -3548,10 +3537,6 @@ img {
 		padding: 5.5em 0;
 	}
 
-	.container-masonry {
-		padding-top: 30px;
-	}
-
 	.container-boxes {
 		padding-top: 50px;
 	}
@@ -3641,14 +3626,6 @@ img {
 #top.navbar .container {
 	max-width: none;
 	width: 100%;
-}
-
-/* Force all content containers to have the same max-width for consistent alignment */
-.container,
-.container-boxes,
-.container-masonry {
-	max-width: 1170px;
-	margin: 0 auto;
 }
 
 /* Override navigation alignment to be left-aligned */
