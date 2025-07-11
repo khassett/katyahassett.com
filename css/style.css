@@ -883,7 +883,7 @@ img.round {
 
 /* Make images responsive by default */
 img {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 	display: block;
 }
@@ -1715,7 +1715,7 @@ img {
 
 #site-menu a {
 	display: block;
-	padding: 0.75em 1em;
+	padding: 0.5em 1em;
 	font-size: 0.9em;
 	letter-spacing: 0.05em;
 	text-decoration: none;

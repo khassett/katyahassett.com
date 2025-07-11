@@ -14,41 +14,10 @@
 	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<style>
-		.masonry-container {
-			columns: 3;
-			column-gap: 20px;
-			margin: 0 auto;
-		}
-		
-		.masonry-item {
-			break-inside: avoid;
-			margin-bottom: 20px;
-			display: inline-block;
+		.equal-height-images {
+			height: 300px;
+			object-fit: contain;
 			width: 100%;
-		}
-		
-		.masonry-item img {
-			width: 100%;
-			height: auto;
-			display: block;
-		}
-		
-		/* Responsive breakpoints */
-		@media (max-width: 768px) {
-			.masonry-container {
-				columns: 2;
-				column-gap: 15px;
-			}
-			.masonry-item {
-				margin-bottom: 15px;
-			}
-		}
-		
-		@media (max-width: 480px) {
-			.masonry-container {
-				columns: 1;
-				column-gap: 0;
-			}
 		}
 	</style>
 </head>
@@ -90,26 +59,33 @@
 				</div>
 			</div>
 			<div class="margin-3"></div>
+			<div class="row">
+				<div class="project-image col-md-4">
+					<img src="img/Unwind/Schedule Sign.svg" alt="Illustrated Logo" class="equal-height-images">
+				</div>
+				<div class="col-md-8">
+					<img src="img/Unwind/Wall Sign.svg" alt="Outdoor Wall Sign" class="equal-height-images">
+				</div>
+			</div>
+            <div class="margin-3"></div>
+            <div class="row">
+				<div class="col-md-6 col-sm-12">
+					<img src="img/Unwind/Wordmark Beige.svg" alt="iPad Mockup">
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<img src="img/Unwind/Yoga Mat.svg" alt="iPad Mockup">
+				</div>
+			</div>
 			
-			<!-- Masonry Gallery for Unwind Images -->
-			<div class="masonry-container">
-				<div class="masonry-item">
-					<img src="img/Unwind/Schedule Sign.svg" alt="Schedule Sign">
+			<div class="margin-3"></div>
+			<div class="row">
+				<div class="col-md-4 col-sm-12">
+					<img src="img/Unwind/Key Ring Back.svg" alt="Responsive Scale">
+                    <img src="img/Unwind/Key Ring Front.svg" alt="Responsive Scale">
 				</div>
-				<div class="masonry-item">
-					<img src="img/Unwind/Wall Sign.svg" alt="Wall Sign">
-				</div>
-				<div class="masonry-item">
-					<img src="img/Unwind/Wordmark Beige.svg" alt="Wordmark Beige">
-				</div>
-				<div class="masonry-item">
-					<img src="img/Unwind/Yoga Mat.svg" alt="Yoga Mat">
-				</div>
-				<div class="masonry-item">
-					<img src="img/Unwind/Key Ring Back.svg" alt="Key Ring Back">
-				</div>
-				<div class="masonry-item">
-					<img src="img/Unwind/Key Ring Front.svg" alt="Key Ring Front">
+				<div class="col-md-8 col-sm-12">
+					<h6>Vertical Contained Wordmark</h6>
+			
 				</div>
                 <div class="masonry-item">
 					<img src="img/Unwind/unwind_paperschedule.png" alt="Key Ring Front">
