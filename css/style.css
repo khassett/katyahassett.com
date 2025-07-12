@@ -125,6 +125,25 @@ OPTIMIZED: Removed print styles, webkit scrollbar, and legacy properties
     width: 100%;
 }
 
+.h1{
+	font-size: 4rem;
+	color: black;
+	font-weight: 700
+}
+
+.h2{
+	font-size: 3rem;
+	color: black;
+	font-weight: 400;
+}
+
+.h5{
+	font-size: 2.5rem;
+	color: black;
+	font-weight: 700;
+	font-variant: small-caps;
+}
+
 .h1,
 .hero-title {
     font-size: 4rem;
@@ -1893,11 +1912,14 @@ img {
 }
 
 .project-properties h6 {
-	margin-bottom: 0.5em;
+	margin-bottom: 0.75em;
+	font-weight: 500;
+	margin-bottom: 0.25em;
 }
 
 .project-properties p.small {
-	padding-bottom: 1.5em;
+	padding-bottom: 1.25 em;
+	padding-top: 1.25 em;
 	border-bottom: 1px solid #e1e8ed;
 }
 
@@ -2970,6 +2992,11 @@ img {
 
 	h6.heading span {
 		padding-right: 3em;
+		font-size: 3rem;
+		color: black;
+		font-weight: 700;
+		font-variant: small-caps;
+		margin-bottom: 0.75em;
 	}
 
 	.tab-container.vertical .tab_content {
