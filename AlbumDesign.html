@@ -8,32 +8,24 @@
 	<meta name="description" content="Exa is fully responsive creative agency/freelancer portfolio HTML site template that looks great on any device.">
 	<meta name="keywords" content="Exa, HTML5, Template, Design, Development">
 
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="shortcut icon" href="img/homepage/favicon.svg">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-	
-	
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic%7CRoboto:400,700%7CDroid+Serif" rel="stylesheet" type="text/css">
 	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<script src="https://cdn.tailwindcss.com"></script>
-
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/site.js"></script>
-	<script type="text/javascript" src="js/shared-nav.js"></script>
+	<style>
+		.equal-height-images {
+			height: 300px;
+			object-fit: contain;
+			width: 100%;
+		}
+	</style>
 </head>
 <body>
 
-	<header id="top" class="navbar" role="banner">
+	<header id="top" class="navbar sticky-top" role="banner">
 		<div class="container">
 			<div class="inner">
-
-				<div class="site-title">
-					<h1><a href="index.html"><img src="img/logo.png" width="144" height="52" alt="Logo"></a></h1>
-					<a href="#site-menu" class="site-menu-toggle">
-						<span class="sr-only">Toggle navigation</span>
-						<em class="first"></em><em class="middle"></em><em class="last"></em>
-					</a>
-				</div>
-
 				<div id="site-menu">
 					<nav>
 						<ul>
@@ -52,125 +44,75 @@
 	<main id="content" role="main">
 		<div class="container">
 			<div class="margin-3"></div>
-			<div style="text-align: center;">
-				<h2>Album Design</h2>
-			</div>
 			<div class="row">
-					<img src="img/Album_Mockup.png"  width="1240" height="698" alt="">
+				<div class="col-sm-12 col-md-8">
+					<img src="img/Album/Album_Mockup.png" alt="Desktop Mockup">
+				</div>
+				<div class="col-sm-12 col-md-4 project-details">
+					<h5>Album Design</h5>
+					<h6>Illustrative Design | March 2025</h6>
+					<p class="small">This project was an exploration in branding for RetroSupply Co., a company known for crafting analog-inspired digital tools and textures for creatives. The goal was to develop a visual identity for a new subscription service that seamlessly blended nostalgic design elements with modern usability.</p>
+					<h6>Tools</h6>
+					<p class="small">Photoshop, Illustrator</p>
+				</div>
 			</div>
-
-		<!-- <div class="row">
-			<div class="margin-3"></di v>
-			<div class="col-md-4">
-				<center><img src="img/spellit-logo.png" width="200" height="40" alt=""></center>
-			</div>
-			<div class="col-md-4">
-				<h2 style="text-align: center;">Spell It</h2>
-			</div>
-			<div class="col-md-4">
-			</div>
-			<div class="margin-3"></div>
-		</div> -->
-
 			<div class="margin-3"></div>
 			<div class="row">
-				<div class="col-sm-4 col-md-3 project-properties">
-					<h6>Client</h6>
-					<p class="small">Portland State University</p>
-					<h6>My roles</h6>
-					<p class="small">Graphic Design, Mockups, Visual Hierarchy</p>
-					<h6>Designed by</h6>
-					<p class="small">Katya Hassett</p>
-					<h6>Created</h6>
-					<p class="small">November, 2023</br>Timeframe: 3 weeks</p>
-				</div>
-				<div class="col-sm-8 col-md-8 col-md-offset-1">
-					<p>I designed a vinyl cover layout for <i>All Nerve</i> Breeders album. I designed 12 inch and 7 inch vinyl records along with their approriate components. These include:</p>
-					<ul>
-						<li>Inner sleeve</li>
-						<li>Vinyl Records (12 inch and 7 inch)</li>
-						<li>Back</li>
-						<li>Inside Layout</li>
-					  </ul>
-				</div>
+					<div class="col-md-6">
+						<img src="img/Album/12InchBackMockup.png" alt="Stand Up Schedule">
+						<div class="margin-1"></div>
+						<img src="img/Album/Album_Thumbnail.png" alt="Yoga Mat">
+					</div>
+					<div class="col-md-6">
+						<img src="img/Album/AlbumInside.png" alt="Wordmark">
+						<div class="margin-1"></div>
+						<img src="img/Album/AllNerve_7inch.png" alt="Wall Sign">
+						<div class="margin-1"></div>
+						<img src="img/Album/InnerSleeve_Mockup.png" alt="Paper Schedule" style="width: 100%;">
+						<div class="margin-1"></div>
+						<div class="col-md-6">
+							<img src="img/Unwind/Key Ring Back.svg" alt="Key Ring Front">
+						</div>
+						<div class="col-md-6">	
+						<img src="img/Unwind/Key Ring Front.svg" alt="Key Ring Back">
+						</div>
+					</div>
 			</div>
-			<div class="margin-3"></div>
-
-			<main id="content" role="main">		
-				<div class="container">
-					<h5 class="heading"><span>Components</span></h5>
-					
-					<!-- First Row -->
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="image-container">
-								<a href="img/AllNerve_7inch.png" data-lightbox="gallery" data-title="7 inch mockup">
-									<img src="img/AllNerve_7inch.png" class="img-fluid" alt="7 inch mockup">
-								</a>
-								<h6>7 inch mockup</h6>
-							</div>
-						</div>
-			
-						<!-- Add more col-sm-6 blocks for additional images -->
-					</div>
-			
-					<!-- Second Row -->
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="image-container">
-								<a href="img/AlbumInside.png" data-lightbox="gallery" data-title="Inside Layout">
-									<img src="img/AlbumInside.png" class="img-fluid" alt="Inside Layout">
-								</a>
-								<h6>Inside Layout</h6>
-							</div>
-						</div>
-			
-						<!-- Add more col-sm-6 blocks for additional images -->
-					</div>
-			
-					<!-- Repeat this structure for the other rows in your grid -->
-				</div>
-
+		</div>
+		
+		<div class="margin-3"></div>
 		<div class="container">
-			<h5 class="margin-3">Similar Projects</h5>
+			<h6 class="margin-3">More Work</h6>
 			<div class="owl-carousel owl-thumbs">
 				<div class="thumb dark-overlay">
 					<div class="photo">
-						<a href="Puppy_Love.html">
-							<img src="img/PuppyLove.png" alt="" width="434" height="434">
+						<a href="unwind.html">
+							<img src="img/Unwind/Thumbnail.png" alt="" width="434" height="434">
 							<span class="info"><span class="big-excerpt">Puppy Love</span></span>
 						</a>
 					</div>
 				</div>
 				<div class="thumb dark-overlay">
 					<div class="photo">
-						<a href="AOMTrading.html">
-							<img src="img/AOMTrading.png" alt="" width="434" height="434">
-							<span class="info"><span class="big-excerpt">AOMTrading</span></span>
+						<a href="Spell_It.html">
+							<img src="img/SpellIt/Spell It.png" alt="" width="434" height="434">
+							<span class="info"><span class="big-excerpt">Spell It</span></span>
 						</a>
 					</div>
 				</div>
 				<div class="thumb dark-overlay">
 					<div class="photo">
-						<a href="bookcover.html">
-							<img src="img/sample-thumb.png" alt="" width="434" height="434">
-							<span class="info"><span class="big-excerpt">Book Cover</span></span>
+						<a href="nuts-and-bolts.html">
+							<img src="img/Nuts and Bolts/Thumbnail.png" alt="" width="434" height="434">
+							<span class="info"><span class="big-excerpt">Nuts and Bolts</span></span>
 						</a>
 					</div>
 				</div>
 				<div class="thumb dark-overlay">
 					<div class="photo">
-						<a href="project.html">
-							<img src="img/sample-thumb.png" alt="" width="434" height="434">
-							<span class="info"><span class="big-excerpt">Logo Design</span></span>
-						</a>
-					</div>
-				</div>
-				<div class="thumb dark-overlay">
-					<div class="photo">
-						<a href="project.html">
-							<img src="img/sample-thumb.png" alt="" width="715" height="715">
-							<span class="info"><span class="big-excerpt">Northbound</span></span>
+						<a href="Narika.html">
+							<img src="img/Narika_Mockup.png" alt="" width="434" height="434">
+							<span class="info"><span class="big-excerpt">Narika.org</span></span>
 						</a>
 					</div>
 				</div>
@@ -181,9 +123,6 @@
 
 	<footer id="footer" role="contentinfo">
 		<div class="container">
-			<p>
-				<a href="index.html" class="mini-logo"><a href="index.html"><img src="img/logo.png" width="144" height="52" alt="KatyaHassett"></a>
-			</p>
 			<p>&copy; 2025 Katya Hassett.  All Rights Reserved.</p>
 			<p>
 				<a href="#" class="social-link"><i class="fa fa-behance"></i></a>
