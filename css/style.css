@@ -3773,3 +3773,88 @@ img {
         font-size: 1em;
     }
 }
+
+/* CSS-only Modal/Lightbox for Art Images */
+.art-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.art-modal:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.art-modal-content {
+    position: relative;
+    max-width: 90vw;
+    height: 100vh;
+    max-height: 100vh;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.art-modal-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.art-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #333;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 10000;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.art-modal-close:hover {
+    background: rgba(255, 255, 255, 1);
+    color: #000;
+    text-decoration: none;
+}
+
+.art-modal-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+/* Close modal when clicking outside */
+.art-modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+}
