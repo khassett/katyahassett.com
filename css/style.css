@@ -3789,6 +3789,8 @@ img {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s, visibility 0.3s;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .art-modal:target {
@@ -3799,17 +3801,22 @@ img {
 .art-modal-content {
     position: relative;
     max-width: 90vw;
-    height: 100vh;
-    max-height: 100vh;
+    max-height: 90vh;
     background: white;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 .art-modal-content img {
     width: 100%;
     height: auto;
+    max-width: 90vw;
+    max-height: calc(90vh - 80px); /* Reserve space for info bar */
+    object-fit: contain;
     display: block;
 }
 
@@ -3857,6 +3864,36 @@ img {
     width: 100%;
     height: 100%;
     z-index: 9998;
+}
+
+/* Mobile enhancements for art modals */
+@media (max-width: 768px) {
+    .art-modal {
+        padding: 10px;
+    }
+    
+    .art-modal-content {
+        max-width: 95vw;
+        max-height: 95vh;
+    }
+    
+    .art-modal-content img {
+        max-width: 95vw;
+        max-height: calc(95vh - 80px);
+    }
+    
+    .art-modal-close {
+        top: 10px;
+        right: 15px;
+        font-size: 24px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .art-modal-info {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
 }
 
 /* Contact form styles */
