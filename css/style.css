@@ -3901,3 +3901,25 @@ img {
 .d-none {
 	display: none !important;
 }
+
+/* Balanced navbar spacing - equal visual weight on both sides */
+.navbar .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .site-title {
+    flex: 0 0 80px; /* Fixed width to match resume button area */
+}
+
+#site-menu {
+    flex: 1;
+    text-align: center;
+}
+
+.resume-button {
+    flex: 0 0 80px; /* Fixed width to match site-title area */
+    text-align: right;
+}
