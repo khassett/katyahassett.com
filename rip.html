@@ -34,9 +34,6 @@
 </div>
 </header>
 
-<script>
-injectNavigation("archive");
-</script>
 	<main id="content" role="main">
 		<div class="container">
 			<div class="margin-3"></div>
@@ -138,6 +135,10 @@ injectNavigation("archive");
 <script type="text/javascript" src="js/site.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script>
+		// Initialize navigation
+		injectNavigation("archive");
+		
+		// Initialize carousels
 		jQuery(".owl-carousel.owl-slider").owlCarousel({
 			items   : 1,
 			nav     : true,
