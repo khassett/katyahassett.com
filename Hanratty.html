@@ -24,29 +24,20 @@
 	<header id="top" class="navbar" role="banner">
 		<div class="container">
 			<div class="inner">
-
 				<div class="site-title">
-					<h1><a href="index.html"><img src="img/logo.png" width="144" height="52" alt="Logo"></a></h1>
 					<a href="#site-menu" class="site-menu-toggle">
 						<span class="sr-only">Toggle navigation</span>
 						<em class="first"></em><em class="middle"></em><em class="last"></em>
 					</a>
 				</div>
-
-				<div id="site-menu">
-					<nav>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="work-categories.html">Archive</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</nav>
-				</div>
-
+				<!-- Navigation will be injected here -->
 			</div>
 		</div>
 	</header>
+
+	<script>
+		injectNavigation('archive');
+	</script>
 
 	<main id="content" role="main">
 		<div class="container">

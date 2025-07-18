@@ -23,24 +23,23 @@
 </head>
 <body>
 
-	<header id="top" class="navbar sticky-top" role="banner">
-		<div class="container">
-			<div class="inner">
-				<div id="site-menu">
-					<nav>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="work-categories.html">Archive</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</nav>
-				</div>
+<header id="top" class="navbar sticky-top" role="banner">
+<div class="container">
+<div class="inner">
+<div class="site-title">
+<a href="#site-menu" class="site-menu-toggle">
+<span class="sr-only">Toggle navigation</span>
+<em class="first"></em><em class="middle"></em><em class="last"></em>
+</a>
+</div>
+<!-- Navigation will be injected here -->
+</div>
+</div>
+</header>
 
-			</div>
-		</div>
-	</header>
-
+<script>
+injectNavigation("archive");
+</script>
 	<main id="content" role="main">
 		<div class="container">
 			<div class="margin-3"></div>
@@ -133,7 +132,8 @@
 	</footer>
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/site.js"></script>
+	<script type="text/javascript" src="js/shared-nav.js"></script>
+<script type="text/javascript" src="js/site.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script>
 		jQuery(".owl-carousel.owl-slider").owlCarousel({
