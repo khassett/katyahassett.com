@@ -6,7 +6,7 @@ function getNavigationHTML(currentPage = '') {
                 <ul>
                     <li ${currentPage === 'home' ? 'class="current-menu-item"' : ''}><a href="index.html">Home</a></li>
                     <li ${currentPage === 'about' ? 'class="current-menu-item"' : ''}><a href="about.html">About</a></li>
-                    <li ${currentPage === 'archive' ? 'class="current-menu-item"' : ''}><a href="work-categories.html">Archive</a></li>
+                    <li ${currentPage === 'work' || currentPage === 'archive' ? 'class="current-menu-item"' : ''}><a href="work-categories.html">Work</a></li>
                     <li ${currentPage === 'contact' ? 'class="current-menu-item"' : ''}><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
