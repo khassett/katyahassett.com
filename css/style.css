@@ -126,7 +126,7 @@ OPTIMIZED: Removed print styles, webkit scrollbar, and legacy properties
 }
 
 p {
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 ul {
@@ -146,15 +146,22 @@ h1{
 h2{
 	font-size: 2.5rem;
 	color: black;
+	font-weight: 700;
+}
+
+h3{
+	font-size: 1.5rem;
+	color: black;
 	font-weight: 400;
 }
 
-h5{
+/* h5{
 	font-size: 2.5rem;
 	color: black;
 	font-weight: 700;
 	padding-bottom: 0.5em;
-}
+} */
+
 
 .h1,
 .hero-title {
