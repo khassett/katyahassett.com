@@ -1,0 +1,6 @@
+# Redirect /work to homepage
+RedirectMatch 301 ^/work/?$ /
+
+# Alternative rewrite rule
+# RewriteEngine On
+# RewriteRule ^work/?$ / [R=301,L]
