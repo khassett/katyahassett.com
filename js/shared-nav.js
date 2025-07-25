@@ -12,7 +12,7 @@ function getNavigationHTML(currentPage = '') {
             </nav>
         </div>
         <div class="resume-button">
-            <a href="img/homepage/Graphic Design Resume 7_25.pdf" target="_blank" rel="noopener" class="btn btn-resume">Resume</a>
+            <a href="img/homepage/Resume_7.25.pdf" target="_blank" rel="noopener" class="btn btn-resume">Resume</a>
         </div>
     `;
 }
